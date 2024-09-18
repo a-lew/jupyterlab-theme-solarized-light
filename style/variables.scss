@@ -203,7 +203,7 @@ $solarized-base025: color.mix($solarized-base3, $solarized-base2, 50%);
   --jp-code-font-size: 13px;
   --jp-code-line-height: 1.3077; /* 17px for 13px base */
   --jp-code-padding: 5px; /* 5px for 13px base, codemirror highlighting needs integer px value */
-  --jp-code-font-family-default: menlo, consolas, 'DejaVu Sans Mono', monospace;
+  --jp-code-font-family-default: menlo, consolas, 'Hack', monospace;
   --jp-code-font-family: var(--jp-code-font-family-default);
 
   /* This gives a magnification of about 125% in presentation mode over normal. */
@@ -288,7 +288,7 @@ $solarized-base025: color.mix($solarized-base3, $solarized-base2, 50%);
     )};
   --jp-cell-editor-active-border-color: var(--jp-input-active-border-color);
   --jp-cell-prompt-width: 64px;
-  --jp-cell-prompt-font-family: 'Source Code Pro', monospace;
+  --jp-cell-prompt-font-family: 'Hack', monospace;
   --jp-cell-prompt-letter-spacing: 0;
   --jp-cell-prompt-opacity: 1;
   --jp-cell-prompt-not-active-opacity: 1;
