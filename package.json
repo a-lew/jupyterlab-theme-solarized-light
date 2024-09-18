@@ -1,5 +1,5 @@
 {
-    "name": "jupyterlab-theme-solarized-dark",
+    "name": "jupyterlab-theme-solarized-light",
     "version": "3.0.1",
     "contributors": [
         {
@@ -9,23 +9,27 @@
         {
             "name": "Joses W. Ho",
             "url": "https://github.com/josesho"
+        },
+        {
+            "name": "Allan Chain",
+            "url": "https://github.com/AllanChain"
         }
     ],
-    "description": "Solarized dark theme for JupyterLab.",
+    "description": "Solarized light theme for JupyterLab.",
     "keywords": [
         "jupyter",
         "jupyterlab",
         "jupyterlab-extension",
         "jupyterlab-theme"
     ],
-    "homepage": "https://github.com/AllanChain/jupyterlab-theme-solarized-dark",
+    "homepage": "https://github.com/a-lew/jupyterlab-theme-solarized-light",
     "bugs": {
-        "url": "https://github.com/AllanChain/jupyterlab-theme-solarized-dark/issues"
+        "url": "https://github.com/a-lew/jupyterlab-theme-solarized-light/issues"
     },
     "license": "BSD-3-Clause",
     "author": {
-        "name": "Allan Chain",
-        "email": "allan-chain@outllok.com"
+        "name": "Sasha Lew",
+        "email": "a.lew@yale.edu"
     },
     "files": [
         "lib/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
@@ -35,7 +39,7 @@
     "types": "lib/index.d.ts",
     "repository": {
         "type": "git",
-        "url": "https://github.com/AllanChain/jupyterlab-theme-solarized-dark.git"
+        "url": "https://github.com/a-lew/jupyterlab-theme-solarized-light.git"
     },
     "scripts": {
         "build": "jlpm build:sass && jlpm build:lib && jlpm build:labextension:dev",
@@ -48,7 +52,7 @@
         "clean": "jlpm clean:lib",
         "clean:lib": "rimraf lib tsconfig.tsbuildinfo",
         "clean:lintcache": "rimraf .eslintcache .stylelintcache",
-        "clean:labextension": "rimraf jupyterlab_theme_solarized_dark/labextension jupyterlab_theme_solarized_dark/_version.py",
+        "clean:labextension": "rimraf jupyterlab_theme_solarized_light/labextension jupyterlab_theme_solarized_light/_version.py",
         "clean:all": "jlpm clean:lib && jlpm clean:labextension && jlpm clean:lintcache",
         "eslint": "jlpm eslint:check --fix",
         "eslint:check": "eslint . --cache --ext .ts,.tsx",
@@ -102,7 +106,7 @@
     },
     "jupyterlab": {
         "extension": true,
-        "outputDir": "jupyterlab_theme_solarized_dark/labextension",
+        "outputDir": "jupyterlab_theme_solarized_light/labextension",
         "themePath": "lib/index.css"
     },
     "eslintIgnore": [
