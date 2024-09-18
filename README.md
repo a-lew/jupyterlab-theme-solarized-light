@@ -10,14 +10,18 @@ The theme was originally created by [Joses W. Ho](https://github.com/josesho) an
 
 ## Requirements
 
-- JupyterLab >= 4.0.0
+- JupyterLab >= 4.1.5
+
+Note that the toolbar text color will be illegible for JupyterLab 4.1.0 - 4.1.4.
+See [this GitHub issue](https://github.com/jupyterlab/jupyterlab/issues/15786) for more details.
+
 
 ## Install
 
 To install the extension, execute:
 
 ```bash
-pip install jupyterlab_theme_solarized_dark
+pip install git+https://github.com/a-lew/jupyterlab-theme-solarized-light.git
 ```
 
 ## Uninstall
@@ -25,10 +29,10 @@ pip install jupyterlab_theme_solarized_dark
 To remove the extension, execute:
 
 ```bash
-pip uninstall jupyterlab_theme_solarized_dark
+pip uninstall jupyterlab_theme_solarized_light
 ```
 
-Apply the theme by checking `Settings -> Jupyterlab Theme -> Jupyterlab Solarized Dark`
+Apply the theme by checking `Settings -> Jupyterlab Theme -> Jupyterlab Solarized Light`
 
 To enable theme scrollbars, in JupyterLab, either
 
@@ -76,12 +80,12 @@ jupyter lab build --minimize=False
 ### Development uninstall
 
 ```bash
-pip uninstall jupyterlab_theme_solarized_dark
+pip uninstall jupyterlab_theme_solarized_light
 ```
 
 In development mode, you will also need to remove the symlink created by `jupyter labextension develop`
 command. To find its location, you can run `jupyter labextension list` to figure out where the `labextensions`
-folder is located. Then you can remove the symlink named `jupyterlab-theme-solarized-dark` within that folder.
+folder is located. Then you can remove the symlink named `jupyterlab-theme-solarized-light` within that folder.
 
 ### Packaging the extension
 
