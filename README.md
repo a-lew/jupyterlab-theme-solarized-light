@@ -1,4 +1,4 @@
-# JupyterLab Theme Solarized Dark
+# JupyterLab Theme Solarized Light
 
 ![License](https://img.shields.io/github/license/AllanChain/jupyterlab-theme-solarized-dark.svg)
 
@@ -22,6 +22,12 @@ To install the extension, execute:
 
 ```bash
 pip install git+https://github.com/a-lew/jupyterlab-theme-solarized-light.git
+```
+
+To install with pipenv, make sure to specify the package name with `#egg` identifier:
+
+```bash
+pipenv install -e git+https://github.com/a-lew/jupyterlab-theme-solarized-light.git@main#egg=jupyterlab-theme-solarized-light
 ```
 
 ## Uninstall
